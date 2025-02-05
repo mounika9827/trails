@@ -46,7 +46,7 @@ const Login = () => {
       onPress={() => {
         navigation.navigate("BottomTab");
       }}>
-        <Text style={styles.buttonText}>LOG IN</Text>
+        <Text className="justify-center items-center text-[#FFFFFF] bg-red-300"style={styles.startText}>LOG IN</Text>
       </Pressable>
     </View>
   );

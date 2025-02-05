@@ -4,8 +4,8 @@ import { Login, Signup, Verification } from "@/src/screens/auth";
 import Home from "@/src/screens/main/Home";
 import Categories from "@/src/screens/main/Categories";
 import Profile from "@/src/screens/main";
-import bottomTab from "../BottomTab";
 import BottomTab from "../BottomTab";
+import BiometricAuth from "@/biometric";
 
 const MainStack = createNativeStackNavigator();
 
@@ -22,6 +22,7 @@ const MainNavigator = () => {
       <MainStack.Screen name="Categories" component={Categories} />
       <MainStack.Screen name="Profile" component={Profile} />
       <MainStack.Screen name="BottomTab" component={BottomTab} />
+      <MainStack.Screen name="BiometricAuth" component={BiometricAuth} />
     </MainStack.Navigator>
   );
 };
